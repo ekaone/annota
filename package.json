@@ -1,6 +1,6 @@
 {
   "name": "@ekaone/annota",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Header parser and polyglot script runner. Inspect, validate, and run any script by its shebang",
   "keywords": [
     "shebang",
@@ -22,18 +22,18 @@
     "node": ">=18"
   },
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "annota": "./dist/cli.js",
-    "an": "./dist/cli.js"
+    "annota": "./dist/cli.cjs",
+    "an": "./dist/cli.cjs"
   },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "publishConfig": {

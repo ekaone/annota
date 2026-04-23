@@ -17,7 +17,8 @@ export default defineConfig([
 
   {
     entry: { cli: "src/cli.ts" },
-    format: ["esm"],
+    format: ["cjs"],
+    outExtension: () => ({ js: ".cjs" }),
     dts: false,
     clean: false,
     sourcemap: false,
