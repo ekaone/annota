@@ -1,6 +1,6 @@
 {
   "name": "@ekaone/annota",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Header parser and polyglot script runner. Inspect, validate, and run any script by its shebang",
   "keywords": [
     "shebang",
