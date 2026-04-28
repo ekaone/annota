@@ -5,7 +5,7 @@ import { parseMeta } from "./parse-meta.js";
 import { validate } from "./validate.js";
 import type { ValidateRule } from "./types.js";
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
+// ─── Helpers
 
 function readSource(file: string): string {
   try {
@@ -29,7 +29,7 @@ function flagValue(args: string[], name: string): string | null {
   return idx !== -1 ? (args[idx + 1] ?? null) : null;
 }
 
-// ─── Commands ─────────────────────────────────────────────────────────────────
+// ─── Commands
 
 function cmdWhich(file: string): void {
   const source = readSource(file);
@@ -175,7 +175,7 @@ function cmdRun(file: string, args: string[]): void {
   process.exit(result.status ?? 1);
 }
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
+// ─── Helpers
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function getField(meta: any, field: string): string | null {
@@ -221,7 +221,7 @@ Global flags:
 `);
 }
 
-// ─── Entry ────────────────────────────────────────────────────────────────────
+// ─── Entry
 
 const [, , cmd, ...rest] = process.argv;
 
